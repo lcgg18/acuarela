@@ -22,7 +22,7 @@ export default function Home() {
         </div>
         <div className={styles.imagine}>
           
-            <Image src="/QR.png" alt="Codigo QR para Pago" width={300} height={300} />
+            <Image src="/QR.png" alt="Codigo QR para Pago" width={250} height={300} />
         </div>
 
         <h2 className={styles.subtitle}>

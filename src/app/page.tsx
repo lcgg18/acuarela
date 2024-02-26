@@ -1,95 +1,70 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+import NextLink from "next/link";
+import styles from "../../styles/Home.module.css";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
+  
+      <main>
+        <h1 className={styles.title}>Bienvenidos a la APP del Conjunto</h1>
+        <h2 className={styles.subtitle}>
+          Metodos de pago de la Administración
+        </h2>
+        <div className={styles.imagine}>
+          <NextLink
+            href="https://www.psepagos.co/PSEHostingUI/ShowTicketOffice.aspx?ID=6615"
             rel="noopener noreferrer"
+            target="_blank"
+            passHref
           >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+            <Image src="/PSE.png" alt="Pago por PSE" width={150} height={150} />
+          </NextLink>
         </div>
-      </div>
+        <div className={styles.imagine}>
+          
+            <Image src="/QR.png" alt="Codigo QR para Pago" width={300} height={300} />
+        </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+        <h2 className={styles.subtitle}>
+          Metodos de contacto con la Administración
+        </h2>
+        <div className={styles.imagine}>
+          <NextLink
+            href="https://wa.me/573105192544?text=Hola%20!"
+            rel="noopener noreferrer"
+            target="_blank"
+            passHref
+          >
+            <Image src="/WA.png" alt="WhatsApp" width={100} height={100} />
+          </NextLink>
+        </div>
+        <div className={styles.imagine}>
+          <NextLink
+            href="mailto:conjuntocerradoacuarela@hotmail.com"
+            rel="noopener noreferrer"
+            target="_blank"
+            passHref
+          >
+            <Image
+              src="/CE.png"
+              alt="conjuntocerradoacuarela@hotmail.com"
+              width={100}
+              height={100}
+            />
+          </NextLink>
+        </div>
+        {/* <br />
+        <h2 className={styles.subtitle}>Solicitud de Garantia Constructora</h2>
+        <div className={styles.imagine}>
+          <NextLink
+            href="https://orbeconstrucciones.com.co/postventa/"
+            rel="noopener noreferrer"
+            target="_blank"
+            passHref
+          >
+            <Image src="/PV.png" alt="Garantía" width={100} height={100} />
+          </NextLink>
+        </div> */}
+      </main>
   );
 }

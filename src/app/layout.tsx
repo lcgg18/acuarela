@@ -51,7 +51,7 @@ export default function RootLayout({
         <main className={styles.main}>{children}</main>
         <footer className={styles.footer}>
           <span className={styles.subtitle}>
-            ASESORIAS Y SERVICIOS GYG SAS® 2024
+            ORION SOFTWARE ® 2024
           </span>
         </footer>
       </div>

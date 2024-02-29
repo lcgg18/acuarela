@@ -8,6 +8,14 @@ export default function Home() {
       <h1 className={styles.title}>Bienvenidos a la APP del Conjunto</h1>
       <h2 className={styles.subtitle}>Metodos de pago de la Administración</h2>
       <div className={styles.imagine}>
+        <Image
+          src="/CB.png"
+          alt="Convenio corresponsal bancario"
+          width={220}
+          height={220}
+        />
+      </div>
+      <div className={styles.imagine}>
         <NextLink
           href="https://www.psepagos.co/PSEHostingUI/ShowTicketOffice.aspx?ID=6615"
           rel="noopener noreferrer"
@@ -33,7 +41,12 @@ export default function Home() {
         </NextLink>
       </div>
       <div className={styles.imagine}>
-        <NextLink href="/CODIFICACION BANCOLOMBIA.pdf" rel="noopener noreferrer" target="_blank" passHref>
+        <NextLink
+          href="/CODIFICACION BANCOLOMBIA.pdf"
+          rel="noopener noreferrer"
+          target="_blank"
+          passHref
+        >
           <Image
             src="/REFTOUCH.png"
             alt="Referencia para Pago"

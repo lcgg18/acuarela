@@ -7,6 +7,22 @@ export default function Home() {
     <main>
       <h1 className={styles.title}>Bienvenidos a la APP del Conjunto</h1>
       <h2 className={styles.subtitle}>Metodos de pago de la Administración</h2>
+      <br />
+      <div className={styles.imagine}>
+        <NextLink
+          href="/CUOTA DE ADMINISTRACION 2024.pdf"
+          rel="noopener noreferrer"
+          target="_blank"
+          passHref
+        >
+          <Image
+            src="/VALOR.png"
+            alt="Referencia para Pago"
+            width={220}
+            height={220}
+          />
+        </NextLink>
+      </div>
       <div className={styles.imagine}>
         <Image
           src="/CB.png"

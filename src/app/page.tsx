@@ -46,7 +46,7 @@ export default function Home() {
           />
         </NextLink>
       </div>
-      <div className={styles.imagine}>
+      {/* <div className={styles.imagine}>
         <NextLink href="/qr" rel="noopener noreferrer" target="_blank" passHref>
           <Image
             src="/QRTOUCH.png"
@@ -55,7 +55,7 @@ export default function Home() {
             height={220}
           />
         </NextLink>
-      </div>
+      </div> */}
       <div className={styles.imagine}>
         <NextLink
           href="/CODIFICACION BANCOLOMBIA.pdf"
